@@ -43,7 +43,7 @@ function Home() {
             {/* Photo */}
             <div className="col-md-4 text-center mb-4 mb-md-0">
               <img
-                src="images/profile.jpg"  // Make sure this file exists in public/images
+                src="images/phace.jpg"  // Make sure this file exists in public/images
                 alt="Emmanuel Wanjala"
                 className="img-fluid rounded-circle shadow"
                 style={{ maxWidth: '250px' }}

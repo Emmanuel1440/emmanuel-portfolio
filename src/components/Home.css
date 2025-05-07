@@ -1,0 +1,84 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    color: white;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Hero Image Container (Rhombus style) */
+.hero-image-container {
+    width: 300px; /* Adjusted container size */
+    height: 300px; /* Adjusted container size */
+    transform: rotate(45deg);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+    position: relative; /* Ensures the image is contained properly */
+}
+
+/* Hero Image (Centered and rotated inside the container) */
+.hero-image {
+    width: 100%; /* Use 100% to make it fit inside the container */
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(-45deg);
+    position: absolute; /* Position image correctly inside the container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg); /* Center and rotate image */
+}
+
+/* Background Styling for the About Section */
+#about {
+    background-image: url('/public/images/bg2.jpg'); /* Corrected path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem 1rem;
+}
+
+/* Responsive text block next to image */
+@media (min-width: 768px) {
+    .hero-section .container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hero-image-container {
+        margin-bottom: 0;
+        margin-right: 2rem;
+    }
+}
+
+/* Section Spacing */
+section {
+    padding: 4rem 1rem;
+}
+
+/* Section Headings */
+section h2 {
+    margin-bottom: 1rem;
+}
+
+/* Skills badges */
+.list-inline .badge {
+    font-size: 1rem;
+    padding: 0.6em 1em;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
